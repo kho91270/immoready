@@ -4,200 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>ImmoReady Maroc | Expertise, Réception & Livraison Clé en Main</title>
-    <meta name="description" content="ImmoReady : Expert en réception d'appartement à Casablanca, Rabat et Marrakech. Levée de réserves technique, nettoyage et mise en service des compteurs.">
+    <title>ImmoReady | Expertise Réception & Livraison d'Appartement au Maroc</title>
+    <meta name="description" content="Ne prenez aucun risque à la livraison de votre bien. ImmoReady gère l'expertise, la levée de réserves, le nettoyage et les compteurs à Casablanca, Rabat et Marrakech.">
+    <meta name="keywords" content="levée de réserves maroc, réception appartement casablanca, expertise immobilière rabat, nettoyage fin de chantier marrakech, lydec, redal, radeema">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
     <style>
+        body { font-family: 'Inter', sans-serif; }
         :root { --navy: #1A365D; --gold: #C5A059; }
         .text-navy { color: var(--navy); }
         .bg-navy { background-color: var(--navy); }
         .text-gold { color: var(--gold); }
         .bg-gold { background-color: var(--gold); }
         .border-gold { border-color: var(--gold); }
-        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        .card-shadow:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); transition: all 0.3s; }
+        .floating-wa { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-gray-900">
 
-    <nav class="bg-navy p-5 text-white sticky top-0 z-50 shadow-xl">
+    <nav class="bg-navy p-4 text-white sticky top-0 z-[100] shadow-2xl">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-shield-check text-gold text-2xl"></i>
-                <h1 class="text-xl font-bold tracking-tighter uppercase">IMMOReady <span class="text-gold">MAROC</span></h1>
+                <i class="fa-solid fa-shield-halved text-gold text-2xl"></i>
+                <span class="text-xl font-extrabold tracking-tighter">IMMOReady <span class="text-gold">MAROC</span></span>
             </div>
-            <div class="space-x-6 hidden lg:flex font-medium text-sm">
+            <div class="hidden lg:flex space-x-8 items-center text-sm font-semibold uppercase tracking-wider">
                 <a href="#expertises" class="hover:text-gold transition">Expertises</a>
-                <a href="#packs" class="hover:text-gold transition">Packs & Tarifs</a>
-                <a href="#process" class="hover:text-gold transition">Fonctionnement</a>
-                <a href="#contact" class="bg-gold px-4 py-2 rounded-lg hover:bg-yellow-700">Devis Express</a>
+                <a href="#packs" class="hover:text-gold transition">Tarifs</a>
+                <a href="#process" class="hover:text-gold transition">Notre Méthode</a>
+                <a href="#contact" class="bg-gold px-6 py-2 rounded-full hover:bg-yellow-600 transition shadow-lg">Demander un Devis</a>
             </div>
         </div>
     </nav>
 
-    <header class="py-20 bg-white text-center border-b">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-black text-navy mb-6 uppercase tracking-tight">Ne réceptionnez pas votre bien <br><span class="text-gold">à l'aveugle.</span></h2>
-            <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-10">Nous expertisons plus de 150 points de contrôle pour garantir que votre investissement à Casablanca, Rabat ou Marrakech est conforme aux normes.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#packs" class="bg-navy text-white px-8 py-4 rounded font-bold">Voir les tarifs</a>
-                <a href="https://wa.me/212600000000" class="border-2 border-green-600 text-green-600 px-8 py-4 rounded font-bold flex items-center"><i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Expert</a>
+    <header class="relative bg-white pt-20 pb-16 border-b">
+        <div class="container mx-auto px-6 text-center">
+            <div class="inline-flex items-center space-x-2 bg-yellow-50 border border-yellow-200 px-4 py-2 rounded-full mb-6">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
+                </span>
+                <span class="text-xs font-bold text-navy uppercase tracking-widest">Expertise Premium : Casablanca • Rabat • Marrakech</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-navy mb-6 leading-[1.1]">Un appartement livré <br><span class="text-gold italic">sans vices cachés.</span></h1>
+            <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Ne signez pas votre PV de livraison sans une expertise technique. Nous inspectons 150+ points de contrôle et gérons votre emménagement de A à Z.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#packs" class="bg-navy text-white px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-blue-900 transition">Voir nos Packs</a>
+                <a href="https://wa.me/212600000000" class="bg-green-600 text-white px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-green-700 transition flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Expertise WhatsApp
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="expertises" class="py-20 bg-gray-50">
+    <section class="bg-navy py-10">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-navy mb-16">Nos Points d'Expertise Technique</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-gold">
-                    <i class="fa-solid fa-faucet text-gold text-3xl mb-4"></i>
-                    <h3 class="font-bold mb-2">Plomberie & Sanitaire</h3>
-                    <ul class="text-xs text-gray-500 space-y-2">
-                        <li>• Test de pression et d'évacuation</li>
-                        <li>• Recherche d'infiltrations/humidité</li>
-                        <li>• Vérification étanchéité joints</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-navy">
-                    <i class="fa-solid fa-plug text-navy text-3xl mb-4"></i>
-                    <h3 class="font-bold mb-2">Électricité & Réseaux</h3>
-                    <ul class="text-xs text-gray-500 space-y-2">
-                        <li>• Test des prises et tableaux</li>
-                        <li>• Vérification mise à la terre</li>
-                        <li>• Test vidéophonie et fibre</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-gold">
-                    <i class="fa-solid fa-door-open text-gold text-3xl mb-4"></i>
-                    <h3 class="font-bold mb-2">Menuiserie & Alu</h3>
-                    <ul class="text-xs text-gray-500 space-y-2">
-                        <li>• Alignement des portes et cadres</li>
-                        <li>• Étanchéité à l'air et au bruit</li>
-                        <li>• Fonctionnement des volets roulants</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-navy">
-                    <i class="fa-solid fa-brush text-navy text-3xl mb-4"></i>
-                    <h3 class="font-bold mb-2">Finitions & Maçonnerie</h3>
-                    <ul class="text-xs text-gray-500 space-y-2">
-                        <li>• Diagnostic peinture et faux-plafonds</li>
-                        <li>• Vérification planéité des sols</li>
-                        <li>• Contrôle des éclats de carrelage</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="packs" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-navy mb-6">Nos Packs "Sérénité Totale"</h2>
-            <p class="text-center text-gray-400 mb-16 italic">Tarifs incluant notre garantie de suivi professionnel et réseau de partenaires historiques.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="border rounded-2xl p-8 card-hover shadow-lg">
-                    <h3 class="text-xl font-bold mb-2">Pack Essentiel</h3>
-                    <p class="text-xs text-gray-400 mb-6 uppercase">Idéal pour studio / F2</p>
-                    <div class="text-3xl font-black text-navy mb-8">3 500 DH <span class="text-sm font-normal text-gray-400">TTC</span></div>
-                    <ul class="space-y-4 text-sm mb-10">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Audit technique de réception</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> PV de réserves détaillé (PDF)</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Aide à la mise en service eau/élec</li>
-                    </ul>
-                    <a href="#contact" class="block text-center border-2 border-navy py-3 rounded font-bold hover:bg-navy hover:text-white transition">Réserver</a>
-                </div>
-
-                <div class="border-4 border-gold rounded-2xl p-8 card-hover shadow-2xl relative bg-slate-50">
-                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Recommandé</span>
-                    <h3 class="text-xl font-bold mb-2">Pack Premium Sérénité</h3>
-                    <p class="text-xs text-gray-400 mb-6 uppercase">Appartement familial / F3-F4</p>
-                    <div class="text-3xl font-black text-gold mb-8">6 000 DH <span class="text-sm font-normal text-gray-400">TTC</span></div>
-                    <ul class="space-y-4 text-sm mb-10">
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Audit technique approfondi</li>
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> **Nettoyage professionnel inclus**</li>
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Gestion administrative Lydec/Redal</li>
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Suivi contre-visite levée de réserves</li>
-                    </ul>
-                    <a href="#contact" class="block text-center bg-gold text-white py-3 rounded font-bold hover:bg-yellow-700 transition">Choisir ce pack</a>
-                </div>
-
-                <div class="border rounded-2xl p-8 card-hover shadow-lg">
-                    <h3 class="text-xl font-bold mb-2">Pack Villa / Prestige</h3>
-                    <p class="text-xs text-gray-400 mb-6 uppercase">Grandes surfaces & Villas</p>
-                    <div class="text-3xl font-black text-navy mb-8">15 0000 DH <span class="text-sm font-normal text-gray-400">TTC</span></div>
-                    <ul class="space-y-4 text-sm mb-10">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Expertise structurelle & Étanchéité</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Nettoyage fin de chantier complet</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Plan d'ameublement & Devis partenaires</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Assistance illimitée (1 mois)</li>
-                    </ul>
-                    <a href="#contact" class="block text-center border-2 border-navy py-3 rounded font-bold hover:bg-navy hover:text-white transition">Demander un devis</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="process" class="py-20 bg-navy text-white">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                    <h2 class="text-3xl font-bold mb-6 italic text-gold">On ne se contente pas de noter, on agit.</h2>
-                    <p class="mb-8 opacity-80 leading-relaxed">
-                        Le saviez-vous ? 70% des retards d'emménagement au Maroc sont dus à la paperasse. 
-                        <strong>ImmoReady</strong> dispose de coursiers spécialisés pour vos démarches auprès de la <strong>Lydec, Redal et Radeema</strong>.
-                    </p>
-                    <div class="bg-white/10 p-6 rounded-lg">
-                        <h4 class="font-bold text-gold mb-4"><i class="fa-solid fa-file-signature mr-2"></i> Documents à nous fournir :</h4>
-                        <ul class="text-sm space-y-3">
-                            <li>• Copie certifiée de la CNIE</li>
-                            <li>• Copie du contrat de vente ou attestation d'attribution</li>
-                            <li>• Procuration légalisée (Modèle fourni par nos soins)</li>
-                        </ul>
-                    </div>
+                    <p class="text-gold text-4xl font-black">150+</p>
+                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Points de contrôle</p>
                 </div>
-                <div class="grid grid-cols-1 gap-4">
-                    <div class="bg-white text-navy p-6 rounded-xl flex items-center">
-                        <div class="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4 text-xl">1</div>
-                        <p class="font-bold text-sm underline">Nous analysons vos documents sous 24h.</p>
-                    </div>
-                    <div class="bg-white text-navy p-6 rounded-xl flex items-center">
-                        <div class="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4 text-xl">2</div>
-                        <p class="font-bold text-sm underline">Visite technique avec nos experts certifiés.</p>
-                    </div>
-                    <div class="bg-white text-navy p-6 rounded-xl flex items-center">
-                        <div class="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4 text-xl">3</div>
-                        <p class="font-bold text-sm underline">Nettoyage & Remise des clés finale.</p>
-                    </div>
+                <div>
+                    <p class="text-gold text-4xl font-black">24h</p>
+                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Délai d'intervention</p>
+                </div>
+                <div>
+                    <p class="text-gold text-4xl font-black">10ans+</p>
+                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Expérience Partenaires</p>
+                </div>
+                <div>
+                    <p class="text-gold text-4xl font-black">0</p>
+                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Stress Propriétaire</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-white text-center">
+    <section id="expertises" class="py-24 bg-slate-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-navy mb-8">Prêt à sécuriser votre appartement ?</h2>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-navy uppercase tracking-tight">Notre Expertise Technique</h2>
+                <p class="text-gray-500 mt-2 italic">Ce que nous vérifions pour vous</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-gold card-shadow">
+                    <i class="fa-solid fa-faucet-drip text-gold text-3xl mb-4"></i>
+                    <h3 class="font-bold text-navy mb-3">Plomberie & Humidité</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Détection de fuites, tests de pression, étanchéité des douches et vérification des évacuations.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-navy card-shadow">
+                    <i class="fa-solid fa-bolt-lightning text-navy text-3xl mb-4"></i>
+                    <h3 class="font-bold text-navy mb-3">Électricité & Réseaux</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Test de chaque prise, vérification du tableau, test fibre optique et vidéophonie.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-gold card-shadow">
+                    <i class="fa-solid fa-window-restore text-gold text-3xl mb-4"></i>
+                    <h3 class="font-bold text-navy mb-3">Menuiserie & Alu</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Alignement des ouvrants, étanchéité à l'air, rayures vitrages et fonctionnement volets.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-navy card-shadow">
+                    <i class="fa-solid fa-compass-drafting text-navy text-3xl mb-4"></i>
+                    <h3 class="font-bold text-navy mb-3">Finitions & Sols</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Vérification du carrelage (sonnage), planéité des murs, éclats peinture et faux-plafonds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-navy rounded-[3rem] p-12 text-white flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 italic text-gold">Plus qu'une inspection, <br>un chef d'orchestre.</h2>
+                    <p class="text-lg opacity-80 mb-6 font-light">
+                        Nous travaillons avec les mêmes **partenaires historiques** (notaires, artisans, experts) depuis des années. Vous nous confiez vos clés, nous vous rendons un foyer prêt à vivre.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-file-contract text-gold"></i>
+                            <span class="text-sm">Assistance Administrative (Lydec, Redal, Radeema)</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-truck-ramp-box text-gold"></i>
+                            <span class="text-sm">Suivi Ameublement & Livraison Mobilier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-white text-navy p-8 rounded-3xl shadow-2xl border-2 border-gold">
+                    <h3 class="text-xl font-bold mb-6">Votre part de collaboration :</h3>
+                    <p class="text-sm text-gray-500 mb-6 italic">Pour agir en votre nom, nous aurons besoin de :</p>
+                    <ul class="space-y-4 text-sm font-semibold">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Copie de la CNIE</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Titre de propriété ou compromis</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Procuration signée (Modèle fourni)</li>
+                    </ul>
+                    <p class="mt-8 text-[10px] text-gray-400 uppercase tracking-widest text-center">Nous vous accompagnons pas à pas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packs" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-navy uppercase">Nos Formules d'Accompagnement</h2>
+                <p class="text-red-600 font-bold mt-4 animate-pulse">Saviez-vous ? Une infiltration non détectée coûte en moyenne 15 000 DH.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold mb-2">Pack Essentiel</h3>
+                    <p class="text-[10px] text-gray-400 uppercase mb-6">Idéal Studio / F2</p>
+                    <div class="text-4xl font-black text-navy mb-8">2 500 <span class="text-sm font-normal text-gray-400 uppercase">DH</span></div>
+                    <ul class="space-y-4 text-sm text-gray-600 mb-10 h-48">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Audit technique de réception</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> PV de réserves détaillé</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Aide administrative eau/élec</li>
+                    </ul>
+                    <a href="#contact" class="block text-center border-2 border-navy py-3 rounded-xl font-bold hover:bg-navy hover:text-white transition">Choisir</a>
+                </div>
+
+                <div class="bg-white border-4 border-gold rounded-3xl p-8 shadow-2xl transform md:-translate-y-4 relative">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gold text-white px-6 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Le plus complet</div>
+                    <h3 class="text-xl font-bold mb-2">Pack Premium Sérénité</h3>
+                    <p class="text-[10px] text-gray-400 uppercase mb-6">Appartement F3 / F4</p>
+                    <div class="text-4xl font-black text-gold mb-8">3 900 <span class="text-sm font-normal text-gray-400 uppercase text-navy">DH</span></div>
+                    <ul class="space-y-4 text-sm text-gray-600 mb-10 h-48">
+                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Expertise technique complète</li>
+                        <li><i class="fa-solid fa-star text-gold mr-2"></i> **Nettoyage Fin de Chantier**</li>
+                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Gestion Lydec / Redal / Radeema</li>
+                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Suivi contre-visite inclus</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-gold text-white py-3 rounded-xl font-bold hover:bg-yellow-600 transition shadow-lg">Choisir</a>
+                </div>
+
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold mb-2">Pack Villa / Prestige</h3>
+                    <p class="text-[10px] text-gray-400 uppercase mb-6">Villas & Rénovations</p>
+                    <div class="text-4xl font-black text-navy mb-8">5 500 <span class="text-sm font-normal text-gray-400 uppercase">DH</span></div>
+                    <ul class="space-y-4 text-sm text-gray-600 mb-10 h-48">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Expertise structure & Étanchéité</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Nettoyage Industriel Profond</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Plan d'Ameublement & Suivi</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Assistance illimitée 1 mois</li>
+                    </ul>
+                    <a href="#contact" class="block text-center border-2 border-navy py-3 rounded-xl font-bold hover:bg-navy hover:text-white transition">Choisir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-navy mb-4">Prêt à sécuriser votre achat ?</h2>
+            <p class="text-gray-500 mb-12">Nos experts interviennent sous 24h sur Casablanca, Rabat et Marrakech.</p>
             <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="https://wa.me/212680369018" class="bg-green-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-green-700 transition flex items-center justify-center">
-                    <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> Parler à un expert sur WhatsApp
+                <a href="https://wa.me/212600000000" class="bg-green-600 text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-green-700 transition flex items-center justify-center shadow-2xl">
+                    <i class="fa-brands fa-whatsapp mr-4 text-3xl"></i> WhatsApp Expert
+                </a>
+                <a href="mailto:contact@immoReady.ma" class="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-900 transition flex items-center justify-center shadow-2xl">
+                    <i class="fa-solid fa-envelope mr-4 text-3xl"></i> E-mail Direct
                 </a>
             </div>
-            <p class="mt-8 text-gray-400">Interventions prioritaires : Casablanca, Rabat, Marrakech, Bouznika, Mohammedia.</p>
         </div>
     </section>
 
-    <footer class="bg-navy py-12 border-t border-white/5">
-        <div class="container mx-auto px-6 text-center">
-            <div class="text-gold font-bold mb-4 uppercase tracking-widest">ImmoReady Maroc &copy; 2026</div>
-            <div class="text-gray-500 text-xs space-x-4">
-                <a href="#">Mentions Légales</a>
-                <a href="#">Politique de Confidentialité</a>
-                <a href="#">Partenaires</a>
-            </div>
+    <footer class="bg-navy py-12 text-center text-white/50 text-sm">
+        <div class="container mx-auto px-6">
+            <div class="text-gold font-black text-xl mb-4 tracking-tighter">IMMOReady MAROC</div>
+            <p>&copy; 2026 Tous droits réservés. <br> Expertise • Confiance • Sérénité</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/212600000000" class="fixed bottom-8 right-8 bg-green-500 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(34,197,94,0.4)] z-[200] floating-wa hover:scale-110 transition-transform">
+        <i class="fa-brands fa-whatsapp text-4xl"></i>
+    </a>
 
 </body>
 </html>
