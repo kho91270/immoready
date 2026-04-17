@@ -15,11 +15,11 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         :root { --navy: #1A365D; --gold: #C5A059; }
-        .text-navy { color: var(--navy); }
-        .bg-navy { background-color: var(--navy); }
-        .text-gold { color: var(--gold); }
-        .bg-gold { background-color: var(--gold); }
-        .border-gold { border-color: var(--gold); }
+        .text-navy { color: #1A365D; }
+        .bg-navy { background-color: #1A365D; }
+        .text-gold { color: #C5A059; }
+        .bg-gold { background-color: #C5A059; }
+        .border-gold { border-color: #C5A059; }
         .card-shadow:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); transition: all 0.3s; }
         .floating-wa { animation: bounce 2s infinite; }
         @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
@@ -31,171 +31,151 @@
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-shield-halved text-gold text-2xl"></i>
-                <span class="text-xl font-extrabold tracking-tighter">IMMOReady <span class="text-gold">MAROC</span></span>
+                <span class="text-xl font-extrabold tracking-tighter uppercase">IMMOReady <span class="text-gold">MAROC</span></span>
             </div>
             <div class="hidden lg:flex space-x-8 items-center text-sm font-semibold uppercase tracking-wider">
                 <a href="#expertises" class="hover:text-gold transition">Expertises</a>
                 <a href="#packs" class="hover:text-gold transition">Tarifs</a>
-                <a href="#process" class="hover:text-gold transition">Notre Méthode</a>
-                <a href="#contact" class="bg-gold px-6 py-2 rounded-full hover:bg-yellow-600 transition shadow-lg">Demander un Devis</a>
+                <a href="#methode" class="hover:text-gold transition">Notre Méthode</a>
+                <a href="#guide" class="text-gold border border-gold px-3 py-1 rounded hover:bg-gold hover:text-white transition">Guide Gratuit</a>
+                <a href="#contact" class="bg-gold px-6 py-2 rounded-full hover:bg-yellow-600 transition shadow-lg text-white">Demander un Devis</a>
             </div>
         </div>
     </nav>
 
     <header class="relative bg-white pt-20 pb-16 border-b">
         <div class="container mx-auto px-6 text-center">
-            <div class="inline-flex items-center space-x-2 bg-yellow-50 border border-yellow-200 px-4 py-2 rounded-full mb-6">
-                <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
-                </span>
-                <span class="text-xs font-bold text-navy uppercase tracking-widest">Expertise Premium : Casablanca • Rabat • Marrakech</span>
+            <div class="inline-flex items-center space-x-2 bg-yellow-50 border border-yellow-200 px-4 py-2 rounded-full mb-6 text-navy">
+                <span class="text-xs font-bold uppercase tracking-widest">Expertise Premium : Casa • Rabat • Marrakech</span>
             </div>
             <h1 class="text-4xl md:text-6xl font-black text-navy mb-6 leading-[1.1]">Un appartement livré <br><span class="text-gold italic">sans vices cachés.</span></h1>
             <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Ne signez pas votre PV de livraison sans une expertise technique. Nous inspectons 150+ points de contrôle et gérons votre emménagement de A à Z.
+                Ne signez pas votre PV de livraison sans une expertise technique. Nous inspectons 150+ points de contrôle et gérons tout pour vous.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#packs" class="bg-navy text-white px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-blue-900 transition">Voir nos Packs</a>
                 <a href="https://wa.me/212600000000" class="bg-green-600 text-white px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-green-700 transition flex items-center justify-center">
-                    <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Expertise WhatsApp
+                    <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> WhatsApp Expert
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="bg-navy py-10">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <p class="text-gold text-4xl font-black">150+</p>
-                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Points de contrôle</p>
-                </div>
-                <div>
-                    <p class="text-gold text-4xl font-black">24h</p>
-                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Délai d'intervention</p>
-                </div>
-                <div>
-                    <p class="text-gold text-4xl font-black">10ans+</p>
-                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Expérience Partenaires</p>
-                </div>
-                <div>
-                    <p class="text-gold text-4xl font-black">0</p>
-                    <p class="text-white text-[10px] uppercase tracking-widest mt-2">Stress Propriétaire</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="expertises" class="py-24 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-black text-navy uppercase tracking-tight">Notre Expertise Technique</h2>
-                <p class="text-gray-500 mt-2 italic">Ce que nous vérifions pour vous</p>
-            </div>
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black text-navy uppercase mb-16 underline decoration-gold decoration-4 underline-offset-8">Ce que nous vérifions</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-gold card-shadow">
                     <i class="fa-solid fa-faucet-drip text-gold text-3xl mb-4"></i>
-                    <h3 class="font-bold text-navy mb-3">Plomberie & Humidité</h3>
-                    <p class="text-xs text-gray-500 leading-loose">Détection de fuites, tests de pression, étanchéité des douches et vérification des évacuations.</p>
+                    <h3 class="font-bold text-navy mb-3">Plomberie</h3>
+                    <p class="text-xs text-gray-500">Fuites, pression, étanchéité des douches et évacuations.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-navy card-shadow">
                     <i class="fa-solid fa-bolt-lightning text-navy text-3xl mb-4"></i>
-                    <h3 class="font-bold text-navy mb-3">Électricité & Réseaux</h3>
-                    <p class="text-xs text-gray-500 leading-loose">Test de chaque prise, vérification du tableau, test fibre optique et vidéophonie.</p>
+                    <h3 class="font-bold text-navy mb-3">Électricité</h3>
+                    <p class="text-xs text-gray-500">Prises, tableau, fibre optique et vidéophonie.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-gold card-shadow">
                     <i class="fa-solid fa-window-restore text-gold text-3xl mb-4"></i>
-                    <h3 class="font-bold text-navy mb-3">Menuiserie & Alu</h3>
-                    <p class="text-xs text-gray-500 leading-loose">Alignement des ouvrants, étanchéité à l'air, rayures vitrages et fonctionnement volets.</p>
+                    <h3 class="font-bold text-navy mb-3">Menuiserie</h3>
+                    <p class="text-xs text-gray-500">Alignement, étanchéité air/bruit et volets.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-navy card-shadow">
                     <i class="fa-solid fa-compass-drafting text-navy text-3xl mb-4"></i>
-                    <h3 class="font-bold text-navy mb-3">Finitions & Sols</h3>
-                    <p class="text-xs text-gray-500 leading-loose">Vérification du carrelage (sonnage), planéité des murs, éclats peinture et faux-plafonds.</p>
+                    <h3 class="font-bold text-navy mb-3">Finitions</h3>
+                    <p class="text-xs text-gray-500">Carrelage, peinture, faux-plafonds et planéité.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="bg-navy rounded-[3rem] p-12 text-white flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6 italic text-gold">Plus qu'une inspection, <br>un chef d'orchestre.</h2>
-                    <p class="text-lg opacity-80 mb-6 font-light">
-                        Nous travaillons avec les mêmes **partenaires historiques** (notaires, artisans, experts) depuis des années. Vous nous confiez vos clés, nous vous rendons un foyer prêt à vivre.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-xl border border-white/10">
-                            <i class="fa-solid fa-file-contract text-gold"></i>
-                            <span class="text-sm">Assistance Administrative (Lydec, Redal, Radeema)</span>
-                        </div>
-                        <div class="flex items-center space-x-3 bg-white/5 p-4 rounded-xl border border-white/10">
-                            <i class="fa-solid fa-truck-ramp-box text-gold"></i>
-                            <span class="text-sm">Suivi Ameublement & Livraison Mobilier</span>
-                        </div>
-                    </div>
+    <section id="methode" class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 italic text-gold">Notre Méthode : Le Chef d'Orchestre</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center p-6">
+                    <div class="w-16 h-16 bg-gold text-white rounded-full flex items-center justify-center text-2xl font-black mb-4">1</div>
+                    <h4 class="font-bold mb-2 uppercase tracking-widest text-sm">Audit & Rapport</h4>
+                    <p class="text-gray-400 text-xs">Visite technique et envoi d'un rapport photo HD des réserves.</p>
                 </div>
-                <div class="lg:w-1/2 bg-white text-navy p-8 rounded-3xl shadow-2xl border-2 border-gold">
-                    <h3 class="text-xl font-bold mb-6">Votre part de collaboration :</h3>
-                    <p class="text-sm text-gray-500 mb-6 italic">Pour agir en votre nom, nous aurons besoin de :</p>
-                    <ul class="space-y-4 text-sm font-semibold">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Copie de la CNIE</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Titre de propriété ou compromis</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Procuration signée (Modèle fourni)</li>
-                    </ul>
-                    <p class="mt-8 text-[10px] text-gray-400 uppercase tracking-widest text-center">Nous vous accompagnons pas à pas.</p>
+                <div class="flex flex-col items-center p-6">
+                    <div class="w-16 h-16 bg-gold text-white rounded-full flex items-center justify-center text-2xl font-black mb-4">2</div>
+                    <h4 class="font-bold mb-2 uppercase tracking-widest text-sm">Action Administrative</h4>
+                    <p class="text-gray-400 text-xs">Gestion des compteurs (Lydec/Redal) via votre procuration.</p>
+                </div>
+                <div class="flex flex-col items-center p-6">
+                    <div class="w-16 h-16 bg-gold text-white rounded-full flex items-center justify-center text-2xl font-black mb-4">3</div>
+                    <h4 class="font-bold mb-2 uppercase tracking-widest text-sm">Livraison Clé en Main</h4>
+                    <p class="text-gray-400 text-xs">Nettoyage profond et suivi ameublement avec nos partenaires.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="packs" class="py-24 bg-slate-50">
+    <section id="guide" class="py-16 bg-yellow-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-black text-navy uppercase">Nos Formules d'Accompagnement</h2>
-                <p class="text-red-600 font-bold mt-4 animate-pulse">Saviez-vous ? Une infiltration non détectée coûte en moyenne 15 000 DH.</p>
+            <div class="max-w-4xl mx-auto bg-white border-2 border-gold rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-xl">
+                <div class="text-5xl text-gold">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-black text-navy mb-2">Guide Gratuit : "Les 15 points critiques"</h3>
+                    <p class="text-gray-600 mb-6">Ne visitez pas votre bien sans savoir quoi regarder. Téléchargez notre checklist d'expert.</p>
+                    <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20recevoir%20votre%20guide%20gratuit" class="bg-navy text-white px-8 py-3 rounded-lg font-bold hover:bg-gold transition">Recevoir par WhatsApp</a>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="packs" class="py-24 bg-slate-50 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-navy uppercase mb-4">Nos Formules</h2>
+            <p class="text-red-600 font-bold mb-16 animate-pulse text-sm">Une infiltration coûte 15 000 DH en moyenne. Épargnez-vous cela.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-all">
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-all flex flex-col items-center">
                     <h3 class="text-xl font-bold mb-2">Pack Essentiel</h3>
-                    <p class="text-[10px] text-gray-400 uppercase mb-6">Idéal Studio / F2</p>
-                    <div class="text-4xl font-black text-navy mb-8">3 500 <span class="text-sm font-normal text-gray-400 uppercase">DH</span></div>
-                    <ul class="space-y-4 text-sm text-gray-600 mb-10 h-48">
-                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Audit technique de réception</li>
-                        <li><i class="fa-solid fa-check text-gold mr-2"></i> PV de réserves détaillé</li>
+                    <p class="text-[10px] text-gray-400 uppercase mb-4">Studio / F2</p>
+                    <div class="mb-8">
+                        <span class="text-xs text-gray-400 block mb-1">À partir de</span>
+                        <span class="text-4xl font-black text-navy">2 500 <span class="text-sm font-normal">DH</span></span>
+                    </div>
+                    <ul class="space-y-4 text-xs text-gray-500 mb-10 text-left w-full h-32">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Audit technique & PV</li>
                         <li><i class="fa-solid fa-check text-gold mr-2"></i> Aide administrative eau/élec</li>
                     </ul>
-                    <a href="#contact" class="block text-center border-2 border-navy py-3 rounded-xl font-bold hover:bg-navy hover:text-white transition">Choisir</a>
+                    <a href="#contact" class="w-full text-center border-2 border-navy py-3 rounded-xl font-bold hover:bg-navy hover:text-white transition">Choisir</a>
                 </div>
 
-                <div class="bg-white border-4 border-gold rounded-3xl p-8 shadow-2xl transform md:-translate-y-4 relative">
-                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gold text-white px-6 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Le plus complet</div>
-                    <h3 class="text-xl font-bold mb-2">Pack Premium Sérénité</h3>
-                    <p class="text-[10px] text-gray-400 uppercase mb-6">Appartement F3 / F4</p>
-                    <div class="text-4xl font-black text-gold mb-8">7 000 <span class="text-sm font-normal text-gray-400 uppercase text-navy">DH</span></div>
-                    <ul class="space-y-4 text-sm text-gray-600 mb-10 h-48">
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Expertise technique complète</li>
+                <div class="bg-white border-4 border-gold rounded-3xl p-8 shadow-2xl transform md:-translate-y-4 relative flex flex-col items-center">
+                    <div class="absolute -top-5 bg-gold text-white px-6 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Le plus complet</div>
+                    <h3 class="text-xl font-bold mb-2">Pack Sérénité</h3>
+                    <p class="text-[10px] text-gray-400 uppercase mb-4">Appartement F3 / F4</p>
+                    <div class="mb-8 text-gold">
+                        <span class="text-xs text-gray-400 block mb-1">À partir de</span>
+                        <span class="text-4xl font-black">3 900 <span class="text-sm font-normal text-navy">DH</span></span>
+                    </div>
+                    <ul class="space-y-4 text-xs text-gray-600 mb-10 text-left w-full font-semibold h-32">
+                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Expertise complète</li>
                         <li><i class="fa-solid fa-star text-gold mr-2"></i> **Nettoyage Fin de Chantier**</li>
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Gestion Lydec / Redal / Radeema</li>
-                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Suivi contre-visite inclus</li>
+                        <li><i class="fa-solid fa-star text-gold mr-2"></i> Gestion administrative totale</li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-gold text-white py-3 rounded-xl font-bold hover:bg-yellow-600 transition shadow-lg">Choisir</a>
+                    <a href="#contact" class="w-full text-center bg-gold text-white py-3 rounded-xl font-bold hover:bg-yellow-600 transition shadow-lg">Choisir</a>
                 </div>
 
-                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-bold mb-2">Pack Villa / Prestige</h3>
-                    <p class="text-[10px] text-gray-400 uppercase mb-6">Villas & Rénovations</p>
-                    <div class="text-4xl font-black text-navy mb-8">A partir de 15 000 <span class="text-sm font-normal text-gray-400 uppercase">DH</span></div>
-                    <ul class="space-y-4 text-sm text-gray-600 mb-10 h-48">
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-all flex flex-col items-center">
+                    <h3 class="text-xl font-bold mb-2">Pack Prestige</h3>
+                    <p class="text-[10px] text-gray-400 uppercase mb-4">Villas & Rénovations</p>
+                    <div class="mb-8">
+                        <span class="text-xs text-gray-400 block mb-1">À partir de</span>
+                        <span class="text-4xl font-black text-navy">5 500 <span class="text-sm font-normal">DH</span></span>
+                    </div>
+                    <ul class="space-y-4 text-xs text-gray-500 mb-10 text-left w-full h-32">
                         <li><i class="fa-solid fa-check text-gold mr-2"></i> Expertise structure & Étanchéité</li>
                         <li><i class="fa-solid fa-check text-gold mr-2"></i> Nettoyage Industriel Profond</li>
-                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Plan d'Ameublement & Suivi</li>
-                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Assistance illimitée 1 mois</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Suivi Ameublement</li>
                     </ul>
-                    <a href="#contact" class="block text-center border-2 border-navy py-3 rounded-xl font-bold hover:bg-navy hover:text-white transition">Choisir</a>
+                    <a href="#contact" class="w-full text-center border-2 border-navy py-3 rounded-xl font-bold hover:bg-navy hover:text-white transition">Choisir</a>
                 </div>
             </div>
         </div>
@@ -203,28 +183,25 @@
 
     <section id="contact" class="py-24 bg-white text-center">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-black text-navy mb-4">Prêt à sécuriser votre achat ?</h2>
-            <p class="text-gray-500 mb-12">Nos experts interviennent sous 24h sur Casablanca, Rabat et Marrakech.</p>
+            <h2 class="text-3xl font-black text-navy mb-4 uppercase">Prêt à sécuriser votre bien ?</h2>
+            <p class="text-gray-500 mb-12">Interventions sous 24h sur Casa, Rabat et Marrakech.</p>
             <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="https://wa.me/212680369018" class="bg-green-600 text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-green-700 transition flex items-center justify-center shadow-2xl">
-                    <i class="fa-brands fa-whatsapp mr-4 text-3xl"></i> WhatsApp Expert
-                </a>
-                <a href="mailto:contact@immoReady.ma" class="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-900 transition flex items-center justify-center shadow-2xl">
-                    <i class="fa-solid fa-envelope mr-4 text-3xl"></i> E-mail Direct
+                <a href="https://wa.me/212600000000" class="bg-green-600 text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-green-700 transition flex items-center justify-center shadow-xl">
+                    <i class="fa-brands fa-whatsapp mr-4 text-3xl"></i> WhatsApp Direct
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-navy py-12 text-center text-white/50 text-sm">
+    <footer class="bg-navy py-12 text-center text-white/50 text-xs tracking-widest">
         <div class="container mx-auto px-6">
             <div class="text-gold font-black text-xl mb-4 tracking-tighter">IMMOReady MAROC</div>
             <p>&copy; 2026 Tous droits réservés. <br> Expertise • Confiance • Sérénité</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/212600000000" class="fixed bottom-8 right-8 bg-green-500 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(34,197,94,0.4)] z-[200] floating-wa hover:scale-110 transition-transform">
-        <i class="fa-brands fa-whatsapp text-4xl"></i>
+    <a href="https://wa.me/212600000000" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-[200] floating-wa hover:scale-110 transition-transform">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
 </body>
