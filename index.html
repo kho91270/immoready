@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>ImmoReady | Expertise & Livraison Immobilière à Zenata, Casa, Rabat</title>
-    <meta name="description" content="Basés en France, nous avons investi à Zenata et Casablanca. Forts de nos difficultés, ImmoReady sécurise votre livraison immobilière au Maroc.">
+    <title>ImmoReady | Expertise, Réception & Gestion Immobilière au Maroc</title>
+    <meta name="description" content="Investisseurs basés en France, nous sécurisons votre livraison immobilière à Zenata, Casablanca, Mohammedia, Rabat et Marrakech. Expertise technique et gain de temps.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -22,6 +22,9 @@
         .floating-wa { animation: bounce 2s infinite; }
         @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
         .service-card:hover { border-color: #C5A059; transform: translateY(-5px); transition: all 0.3s; }
+        .timeline-container { position: relative; }
+        .timeline-container::after { content: ''; position: absolute; width: 2px; background: #C5A059; top: 0; bottom: 0; left: 50%; margin-left: -1px; }
+        @media (max-width: 768px) { .timeline-container::after { left: 31px; } }
     </style>
 </head>
 <body class="bg-slate-50 text-gray-900 leading-relaxed font-light">
@@ -33,9 +36,10 @@
                 <span class="text-xl font-extrabold tracking-tighter uppercase">IMMO<span class="text-gold">READY</span></span>
             </div>
             <div class="hidden lg:flex space-x-6 items-center text-[10px] font-bold uppercase tracking-[0.2em]">
-                <a href="#about" class="hover:text-gold transition text-white">Notre Histoire</a>
-                <a href="#expertises" class="hover:text-gold transition text-white">Expertises</a>
-                <a href="#rentabilite" class="hover:text-gold transition text-white">Rentabilité</a>
+                <a href="#about" class="hover:text-gold transition">L'Histoire</a>
+                <a href="#rentabilite" class="hover:text-gold transition">Rentabilité</a>
+                <a href="#expertises" class="hover:text-gold transition">Services</a>
+                <a href="#blog" class="hover:text-gold transition">Blog</a>
                 <a href="#packs" class="bg-gold px-5 py-2 rounded-full hover:bg-yellow-600 transition shadow-lg text-white">Tarifs</a>
             </div>
         </div>
@@ -43,14 +47,12 @@
 
     <header class="relative bg-white pt-24 pb-20 border-b overflow-hidden">
         <div class="container mx-auto px-6 text-center">
-            <div class="inline-flex items-center space-x-2 bg-yellow-50 border border-gold/30 px-4 py-2 rounded-full mb-8">
-                <span class="text-[10px] font-bold text-navy uppercase tracking-widest text-center">Zenata • Casablanca • Mohammedia • Rabat • Marrakech</span>
-            </div>
             <h1 class="text-4xl md:text-7xl font-black text-navy mb-8 leading-[1.1] tracking-tighter">Ne gâchez plus vos vacances <br><span class="text-gold italic">pour des formalités.</span></h1>
             <p class="text-xl text-gray-500 max-w-3xl mx-auto mb-12">
-                Parce que nous avons vécu l'épuisement des livraisons immobilières au Maroc, nous avons créé **ImmoReady** pour que vous n'ayez plus à le faire.
+                Expertise à Zenata • Casablanca • Mohammedia • Rabat • Marrakech. Nous gérons l'audit technique et les 15 jours de démarches administratives.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#packs" class="bg-navy text-white px-12 py-5 rounded-2xl font-bold shadow-xl hover:bg-blue-900 transition text-center text-sm uppercase tracking-widest">Consulter les Packs</a>
                 <a href="https://wa.me/212680369018" class="bg-green-600 text-white px-12 py-5 rounded-2xl font-black shadow-xl hover:bg-green-700 transition flex items-center justify-center text-xl">
                     <i class="fa-brands fa-whatsapp mr-3 text-3xl"></i> WhatsApp Direct
                 </a>
@@ -60,48 +62,42 @@
 
     <section id="about" class="py-24 bg-white border-b">
         <div class="container mx-auto px-6 max-w-6xl">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-black text-navy uppercase italic">D'investisseurs à Experts <br><span class="text-gold not-italic">notre réalité est la vôtre.</span></h2>
-            </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-6 text-gray-600">
+                    <h2 class="text-3xl font-black text-navy uppercase italic">Qui sommes-nous ? <br><span class="text-gold not-italic">Des investisseurs au service d'investisseurs.</span></h2>
+                    <div class="h-1 w-20 bg-gold mb-8"></div>
                     <p>
-                        Résidant en France, mon épouse et moi avons décidé d'investir dans notre premier appartement à **Zenata**, puis un second à **Casablanca**. Comme vous, nous étions fiers et impatients.
+                        Résidant en France, mon épouse et moi avons décidé d'investir dans notre premier appartement à **Zenata**, puis un second à **Casablanca**. Comme vous, nous étions pleins d'enthousiasme.
                     </p>
                     <p class="font-bold text-navy">
-                        "Je pensais qu'en arrivant, j'allais simplement récupérer les clés. La réalité a été brutale : l'appartement n'était absolument pas prêt."
+                        "Je pensais qu'en arrivant, j'allais simplement récupérer les clés. La réalité a été un choc : l'appartement n'était absolument pas prêt."
                     </p>
                     <p>
-                        J'ai rapidement compris que le **"Haut Standing"** au Maroc ne répond pas aux mêmes standards qu'en France. Avec mes exigences élevées, il a fallu se rendre à l'évidence et s'adapter au terrain. Entre les retards de livraison de l'électroménager, les équipements manquants et les journées entières perdues...
+                        J'ai vite compris que le **"Haut Standing"** au Maroc différait de nos standards en France. Malgré mes exigences élevées, il a fallu se confronter à la réalité du terrain et faire des compromis. Entre les retards de livraison de l'électroménager et les équipements manquants, le rêve peut vite devenir un cauchemar logistique.
                     </p>
                     <div class="bg-slate-50 border-l-4 border-gold p-6 italic">
-                        "J'ai passé plus de 4 heures dans une salle d'attente pour une simple ouverture de compteur. C'était long, épuisant, et cela a gâché nos vacances."
-                    </p>
-                    <p>
-                        C’est de cette frustration qu'est né **ImmoReady**. Nous avons décidé de résoudre ces problèmes pour vous, en mettant à votre service notre expérience et nos partenaires sélectionnés sur le terrain.
+                        "Pour ouvrir mes compteurs, j'ai passé plus de 4 heures dans une salle d'attente. C'était long, frustrant, et cela a gâché nos vacances en famille."
                     </div>
+                    <p>
+                        C’est de ce vécu qu'est né **ImmoReady**. Nous résolvons ces problèmes pour vous en appliquant nos standards de rigueur avec nos partenaires sélectionnés depuis des années.
+                    </p>
                 </div>
-                <div class="relative">
-                    <div class="bg-navy rounded-[3rem] p-10 text-white shadow-2xl">
-                        <h3 class="text-2xl font-bold text-gold mb-6 uppercase tracking-tighter">Ce que nous vous évitons :</h3>
-                        <ul class="space-y-5">
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-ban text-gold mt-1 mr-4"></i>
-                                <span>Le choc de découvrir un appartement non fini le jour J.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-ban text-gold mt-1 mr-4"></i>
-                                <span>Les 4h d'attente en régie (Lydec/Redal).</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-ban text-gold mt-1 mr-4"></i>
-                                <span>La gestion des livreurs qui ne viennent jamais à l'heure.</span>
-                            </li>
-                            <li class="flex items-start border-t border-white/10 pt-5 text-gold font-bold">
-                                <i class="fa-solid fa-heart text-white mt-1 mr-4"></i>
-                                <span>Nous traitons votre appartement comme si c'était le nôtre à Zenata ou Casa.</span>
-                            </li>
-                        </ul>
+                <div class="bg-navy rounded-[3rem] p-10 text-white shadow-2xl relative">
+                    <h3 class="text-2xl font-bold text-gold mb-6 uppercase tracking-tighter text-center">L'économie du temps & d'esprit</h3>
+                    <p class="text-sm text-gray-300 italic text-center mb-8">"Nous vous faisons économiser les 5 à 15 jours de stress entre la signature et l'emménagement."</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 bg-white/5 p-4 rounded-2xl">
+                            <i class="fa-solid fa-check-double text-gold"></i>
+                            <span class="text-xs">Vérification aux standards européens</span>
+                        </div>
+                        <div class="flex items-center space-x-4 bg-white/5 p-4 rounded-2xl">
+                            <i class="fa-solid fa-check-double text-gold"></i>
+                            <span class="text-xs">Zéro attente dans les administrations</span>
+                        </div>
+                        <div class="flex items-center space-x-4 bg-white/5 p-4 rounded-2xl">
+                            <i class="fa-solid fa-check-double text-gold"></i>
+                            <span class="text-xs">Gestion totale des livreurs et artisans</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,75 +106,176 @@
 
     <section id="rentabilite" class="py-24 bg-navy text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-black mb-16 uppercase tracking-widest italic">L'Équation Rentable</h2>
+            <h2 class="text-3xl font-black mb-16 uppercase tracking-widest italic">L'Équation Gagnante</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                 <div class="p-8 border border-white/10 rounded-3xl bg-white/5">
                     <i class="fa-solid fa-plane text-gold text-3xl mb-4"></i>
-                    <h4 class="font-bold mb-2">Voyages</h4>
-                    <p class="text-sm opacity-80 italic">Économie de 200€ à 1200$ de billets d'avion.</p>
+                    <h4 class="font-bold mb-2">Billets d'avion</h4>
+                    <p class="text-sm opacity-80 italic">Économie de 200€ (Europe) à 1200$ (USA) de billets d'avion.</p>
                 </div>
                 <div class="p-8 border border-white/10 rounded-3xl bg-white/5">
                     <i class="fa-solid fa-car text-gold text-3xl mb-4"></i>
-                    <h4 class="font-bold mb-2">Location</h4>
-                    <p class="text-sm opacity-80 italic">Économie de 300€ de location de véhicule.</p>
+                    <h4 class="font-bold mb-2">Location & Carburant</h4>
+                    <p class="text-sm opacity-80 italic">Économie de 300€ de frais de transport sur place.</p>
                 </div>
                 <div class="p-8 border border-white/10 rounded-3xl bg-white/5">
                     <i class="fa-solid fa-utensils text-gold text-3xl mb-4"></i>
-                    <h4 class="font-bold mb-2">Vie Quotidienne</h4>
-                    <p class="text-sm opacity-80 italic">Plus de 1000€ économisés en frais de séjour.</p>
+                    <h4 class="font-bold mb-2">Frais de Vie</h4>
+                    <p class="text-sm opacity-80 italic">Plus de 1000€ économisés en hébergement et restauration.</p>
                 </div>
             </div>
             <div class="mt-16 inline-block bg-gold text-navy px-10 py-5 rounded-2xl font-black text-xl shadow-2xl">
-                ROI Immédiat : Vous payez notre service avec vos économies de voyage.
+                ROI Immédiat : Plus de 1 500 € d'économie par séjour évité.
+            </div>
+        </div>
+    </section>
+
+    <section id="comparatif" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-navy text-center mb-12 uppercase italic">Seul vs ImmoReady</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                <div class="p-10 bg-slate-50">
+                    <h3 class="text-xl font-bold mb-6 text-gray-400 uppercase text-xs tracking-widest flex items-center">
+                        <i class="fa-solid fa-user-xmark mr-3"></i> Seul (Stress & Risques)
+                    </h3>
+                    <ul class="space-y-4 text-xs text-gray-500">
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> Vices cachés (Infiltrations, faux-aplomb).</li>
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> 4h d'attente à la Lydec / Redal.</li>
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> Électroménager livré avec retard ou cassé.</li>
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> Vacances gâchées par les imprévus.</li>
+                    </ul>
+                </div>
+                <div class="p-10 bg-navy text-white border-l-4 border-gold">
+                    <h3 class="text-xl font-bold mb-6 text-gold uppercase text-xs tracking-widest flex items-center">
+                        <i class="fa-solid fa-shield-check mr-3"></i> ImmoReady (Sérénité)
+                    </h3>
+                    <ul class="space-y-4 text-xs">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Audit technique 150 points (Laser & Caméra).</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Coursiers dédiés pour vos abonnements.</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Coordination totale des livraisons mobilières.</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Vous profitez de votre famille dès le Jour 1.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="expertises" class="py-24 bg-slate-50">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black text-navy uppercase mb-20 tracking-tighter">Expertises Techniques</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black text-navy uppercase tracking-tight">Nos Expertises Détaillées</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-gold service-card">
                     <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Levée de Réserves</h3>
-                    <p class="text-[11px] text-gray-500 mb-6 italic">Audit laser & Caméra thermique.</p>
-                    <ul class="text-[11px] text-gray-600 space-y-3 leading-relaxed">
-                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Vérification planéité sols/murs.</li>
+                    <p class="text-[11px] text-gray-500 mb-6 italic leading-relaxed">Le promoteur livre dans l'urgence. Sans expertise, les vices cachés (infiltrations, menuiseries) coûteront 10x le prix de notre prestation.</p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Vérification planéité sols/murs au laser.</li>
                         <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Détection humidité par caméra thermique.</li>
-                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Rapport photo HD pour le promoteur.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Rapport photo HD exhaustif.</li>
                     </ul>
                 </div>
-
                 <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-navy service-card">
-                    <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Compteurs & Admin</h3>
-                    <p class="text-[11px] text-gray-500 mb-6 italic">Zéro attente en régie.</p>
-                    <ul class="text-[11px] text-gray-600 space-y-3 leading-relaxed">
-                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Gestion Lydec/Redal/Radeema.</li>
+                    <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Gestion administrative</h3>
+                    <p class="text-[11px] text-gray-500 mb-6 italic leading-relaxed">Fini les files d'attente de 4h. Nous gérons l'interface avec la Lydec, Redal ou Radeema à votre place.</p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Ouverture abonnements eau/élec.</li>
                         <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Obtention Certificat Consuel.</li>
                         <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Paiement charges de copropriété.</li>
                     </ul>
                 </div>
-
                 <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-gold service-card">
                     <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Nettoyage Industriel</h3>
-                    <p class="text-[11px] text-gray-500 mb-6 italic">Protocole anti-laitance.</p>
-                    <ul class="text-[11px] text-gray-600 space-y-3 leading-relaxed">
-                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Retrait traces ciment & peinture.</li>
-                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Nettoyage rails alu & aérations.</li>
-                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Protection marbres & parquets.</li>
+                    <p class="text-[11px] text-gray-500 mb-6 italic leading-relaxed">Un appartement "neuf" est couvert de laitance de ciment. Un nettoyage classique est insuffisant.</p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Retrait chimique des traces de peinture/colle.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Désinfection des rails alu et aérations.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Protection des sols (Marbre/Parquet).</li>
                     </ul>
                 </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-navy service-card">
+                    <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Logistique Ameublement</h3>
+                    <p class="text-[11px] text-gray-500 mb-6 italic leading-relaxed">Coordonner les livraisons depuis l'étranger est impossible. Nous sommes vos yeux sur place.</p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Réception physique des équipements.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Montage et installation de la cuisine.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Évacuation complète des emballages.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-gold service-card">
+                    <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Suivi de Chantier</h3>
+                    <p class="text-[11px] text-gray-500 mb-6 italic leading-relaxed">Rénovation ou finitions ? Nous pilotons vos artisans quotidiennement.</p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Reporting photo/vidéo hebdomadaire.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Contrôle qualité des matériaux.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-gold mr-2"></i> Respect strict des délais annoncés.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-navy service-card">
+                    <h3 class="text-lg font-bold text-navy mb-4 uppercase tracking-tighter">Évaluation Pré-achat</h3>
+                    <p class="text-[11px] text-gray-500 mb-6 italic leading-relaxed">Avant de signer le compromis, achetez avec des chiffres réels, pas des émotions.</p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Diagnostic structurel complet.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Chiffrage réel des travaux à venir.</li>
+                        <li><i class="fa-solid fa-circle text-[6px] text-navy mr-2"></i> Argumentaire technique de négociation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-black text-navy text-center mb-16 uppercase italic">Le Parcours ImmoReady</h2>
+            <div class="timeline-container space-y-12">
+                <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                    <div class="w-full md:w-5/12 bg-slate-50 p-6 rounded-2xl border text-center md:text-right">
+                        <span class="text-gold font-bold text-xs uppercase tracking-widest">J-15</span>
+                        <h4 class="font-bold text-navy text-xs uppercase mt-1">Planification & Admin</h4>
+                        <p class="text-[10px] text-gray-500 mt-2">Récupération des procurations et gestion des dossiers bancaires (dirhams convertibles).</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-gold rounded-full z-10 text-white text-xs font-bold md:flex items-center justify-center hidden">1</div>
+                    <div class="w-5/12 hidden md:block"></div>
+                </div>
+                <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                    <div class="w-5/12 hidden md:block"></div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-gold rounded-full z-10 text-white text-xs font-bold md:flex items-center justify-center hidden">2</div>
+                    <div class="w-full md:w-5/12 bg-navy p-6 rounded-2xl text-white text-center md:text-left">
+                        <span class="text-gold font-bold text-xs uppercase tracking-widest text-gold">Jour J</span>
+                        <h4 class="font-bold text-xs uppercase mt-1">Audit & Nettoyage</h4>
+                        <p class="text-[10px] text-gray-300 mt-2">Expertise 150 points, rapport de réserves et remise en état industrielle du bien.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-navy text-center mb-16 uppercase italic tracking-tighter">Journal de l'Investisseur</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <article class="p-8 bg-white rounded-3xl shadow-sm border-l-4 border-gold">
+                    <h3 class="text-lg font-bold text-navy mb-4 uppercase text-sm">Le piège du compte convertible</h3>
+                    <p class="text-[11px] text-gray-600">Si vous n'êtes pas résident, certaines banques bloquent vos virements vers l'étranger. Nous vous orientons vers les bons partenaires pour sécuriser vos flux financiers.</p>
+                </article>
+                <article class="p-8 bg-white rounded-3xl shadow-sm border-l-4 border-gold">
+                    <h3 class="text-lg font-bold text-navy mb-4 uppercase text-sm">Les clés post-notaire</h3>
+                    <p class="text-[11px] text-gray-600">Sortir du notaire n'est pas la fin du processus. Entre le permis d'habiter et le paiement des charges, il s'écoule 15 jours. ImmoReady gère cette attente pour vous.</p>
+                </article>
             </div>
         </div>
     </section>
 
     <section id="packs" class="py-24 bg-white border-y">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-black text-navy text-center mb-20 uppercase underline decoration-gold decoration-4 underline-offset-8 italic">Nos Formules</h2>
+            <h2 class="text-3xl font-black text-navy text-center mb-20 uppercase italic underline decoration-gold decoration-4 underline-offset-8">Nos Formules</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
                 <div class="border rounded-[2.5rem] p-10 flex flex-col items-center bg-slate-50">
                     <h3 class="text-xl font-bold mb-2">Pack Essentiel</h3>
+                    <p class="text-[10px] text-gray-400 uppercase font-bold mb-8">Audit technique pro</p>
                     <div class="mb-10 text-center">
-                        <span class="text-[10px] text-gray-400 uppercase block font-bold mb-1 leading-none">À partir de</span>
+                        <span class="text-[10px] text-gray-400 uppercase block font-bold leading-none mb-1">À partir de</span>
                         <span class="text-4xl font-black text-navy">3 500 <span class="text-sm font-normal">DH</span></span>
                     </div>
                     <ul class="space-y-4 text-xs text-gray-500 mb-10 w-full flex-grow border-t pt-6">
@@ -189,10 +286,11 @@
                 </div>
 
                 <div class="border-4 border-gold rounded-[2.5rem] p-10 flex flex-col items-center shadow-2xl transform md:-translate-y-6 relative bg-white">
-                    <div class="absolute -top-5 bg-gold text-white px-8 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">Le plus populaire</div>
+                    <div class="absolute -top-5 bg-gold text-white px-8 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">Le plus loué</div>
                     <h3 class="text-xl font-bold mb-2 text-navy">Pack Sérénité</h3>
+                    <p class="text-[10px] text-gold uppercase font-bold mb-8">Gestion Clé en main</p>
                     <div class="mb-10 text-center">
-                        <span class="text-[10px] text-gray-400 uppercase block font-bold mb-1 leading-none text-navy">À partir de</span>
+                        <span class="text-[10px] text-gray-400 uppercase block font-bold leading-none mb-1 text-navy">À partir de</span>
                         <span class="text-4xl font-black text-gold">6 900 <span class="text-sm font-normal text-navy">DH</span></span>
                     </div>
                     <ul class="space-y-4 text-xs text-gray-600 mb-10 w-full font-semibold flex-grow border-t pt-6">
@@ -205,12 +303,13 @@
 
                 <div class="border rounded-[2.5rem] p-10 flex flex-col items-center bg-slate-50">
                     <h3 class="text-xl font-bold mb-2">Pack Prestige</h3>
-                    <div class="mb-10 text-center">
-                        <span class="text-[10px] text-gray-400 uppercase block font-bold mb-1 leading-none">À partir de</span>
+                    <p class="text-[10px] text-gray-400 uppercase font-bold mb-8 text-center leading-none">Villa & Ameublement</p>
+                    <div class="mb-10 text-center text-center">
+                        <span class="text-[10px] text-gray-400 uppercase block font-bold leading-none mb-1 text-center">À partir de</span>
                         <span class="text-4xl font-black text-navy">13 500 <span class="text-sm font-normal">DH</span></span>
                     </div>
                     <ul class="space-y-4 text-xs text-gray-500 mb-10 w-full flex-grow border-t pt-6">
-                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Expertise Villa & Structure</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Expertise structure & Villa</li>
                         <li><i class="fa-solid fa-check text-gold mr-2"></i> Suivi Ameublement complet</li>
                     </ul>
                     <a href="https://wa.me/212680369018" class="w-full text-center border-2 border-navy py-4 rounded-2xl font-bold hover:bg-navy hover:text-white transition uppercase text-[10px] tracking-widest text-navy">Commander</a>
@@ -220,8 +319,8 @@
     </section>
 
     <section id="contact" class="py-24 bg-navy text-white text-center">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-black mb-12 uppercase tracking-tighter">Votre appartement à Zenata ou Casablanca mérite une expertise ImmoReady.</h2>
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-12 uppercase tracking-tighter italic">Gagnez 15 jours de tranquillité dès aujourd'hui.</h2>
             <div class="flex flex-col md:flex-row justify-center gap-6">
                 <a href="https://wa.me/212680369018" class="bg-green-600 text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-green-700 transition flex items-center justify-center shadow-2xl text-white">
                     <i class="fa-brands fa-whatsapp mr-4 text-3xl"></i> WhatsApp Direct
@@ -234,7 +333,7 @@
         <div class="container mx-auto px-6 text-center">
             <div class="text-navy font-black text-2xl mb-4 tracking-tighter">IMMO<span class="text-gold">Ready</span></div>
             <p class="text-center font-bold">Zenata • Casablanca • Mohammedia • Rabat • Marrakech</p>
-            <p class="mt-4">&copy; 2026 ImmoReady Maroc. Tous droits réservés.</p>
+            <p class="mt-4">&copy; 2026 Tous droits réservés.</p>
         </div>
     </footer>
 
